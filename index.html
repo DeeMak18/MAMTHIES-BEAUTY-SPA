@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mamthie's Beauty Spa | Luxury Sanctuary in Edenvale</title>
+<meta name="description" content="Bespoke beauty and massage rituals designed for total rejuvenation. Experience Edenvale's premier luxury spa sanctuary."/>
+<meta name="keywords" content="beauty spa, massage, Edenvale, luxury spa, facial, waxing, lashes, Johannesburg"/>
+<meta property="og:title" content="Mamthie's Beauty Spa | Luxury Sanctuary in Edenvale"/>
+<meta property="og:description" content="Bespoke beauty and massage rituals designed for total rejuvenation."/>
+<meta property="og:type" content="website"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@200;300;400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-container-highest": "#422c4d",
+          "on-secondary": "#3c2f00",
+          "on-primary": "#432254",
+          "tertiary-fixed-dim": "#cac7b3",
+          "on-tertiary-container": "#868472",
+          "outline-variant": "#4c444d",
+          "secondary": "#e9c349",
+          "on-secondary-container": "#342800",
+          "on-primary-fixed": "#2c0b3e",
+          "on-secondary-fixed": "#241a00",
+          "background": "#1e0a29",
+          "on-surface-variant": "#cec3ce",
+          "on-primary-fixed-variant": "#5b396d",
+          "secondary-fixed": "#ffe088",
+          "on-error": "#690005",
+          "primary-fixed": "#f5d9ff",
+          "inverse-surface": "#f6d9ff",
+          "inverse-primary": "#745186",
+          "on-primary-container": "#9b75ad",
+          "tertiary-fixed": "#e7e3cf",
+          "outline": "#978e98",
+          "on-secondary-fixed-variant": "#574500",
+          "on-background": "#f6d9ff",
+          "on-surface": "#f6d9ff",
+          "error-container": "#93000a",
+          "on-tertiary-fixed-variant": "#494738",
+          "surface-variant": "#422c4d",
+          "surface-bright": "#473152",
+          "secondary-fixed-dim": "#e9c349",
+          "surface-container-high": "#372142",
+          "surface-tint": "#e2b7f4",
+          "primary": "#e2b7f4",
+          "surface-container-low": "#271332",
+          "error": "#ffb4ab",
+          "tertiary-container": "#1c1b0f",
+          "surface-dim": "#1e0a29",
+          "primary-container": "#2b0a3d",
+          "surface-container": "#2c1736",
+          "surface-container-lowest": "#190524",
+          "on-tertiary": "#323123",
+          "primary-fixed-dim": "#e2b7f4",
+          "on-tertiary-fixed": "#1d1c10",
+          "surface": "#1e0a29",
+          "inverse-on-surface": "#3e2848",
+          "on-error-container": "#ffdad6",
+          "secondary-container": "#af8d11",
+          "tertiary": "#cac7b3"
+        },
+        fontFamily: {
+          "headline": ["Newsreader"],
+          "body": ["Manrope"],
+          "label": ["Manrope"]
+        },
+        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .cinematic-overlay {
+    background: linear-gradient(to bottom, rgba(30, 10, 41, 0.4) 0%, rgba(30, 10, 41, 0.9) 100%);
+  }
+  .glass-panel {
+    backdrop-filter: blur(12px);
+    background-color: rgba(71, 49, 82, 0.6);
+  }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #1e0a29; }
+  ::-webkit-scrollbar-thumb { background: #422c4d; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #e9c349; }
+  .tab-content { display: none; }
+  .tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .tab-trigger.active {
+    color: #e9c349;
+    border-bottom-color: #d4af37;
+  }
+  html { scroll-behavior: smooth; }
+  /* Mobile tab horizontal scroll */
+  .tab-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .tab-scroll::-webkit-scrollbar { display: none; }
+  /* Gold button hover glow */
+  .gold-glow {
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
+  }
+  .gold-glow:hover {
+    box-shadow: 0 0 20px rgba(233, 195, 73, 0.3);
+    filter: brightness(1.1);
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-on-secondary" id="top">
+
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md flex justify-between items-center px-6 md:px-12 py-6">
+  <div class="font-headline text-2xl italic font-light text-[#f6d9ff]">Mamthie's Beauty Spa</div>
+  <div class="hidden md:flex gap-12 items-center">
+    <a class="font-headline italic text-lg tracking-wide text-[#f6d9ff] hover:text-secondary transition-colors" href="#rituals">Services</a>
+    <a class="font-headline italic text-lg tracking-wide text-[#f6d9ff] hover:text-secondary transition-colors" href="#about">Sanctuary</a>
+    <a class="font-headline italic text-lg tracking-wide text-[#f6d9ff] hover:text-secondary transition-colors" href="#location">Location</a>
+    <a class="font-headline italic text-lg tracking-wide text-[#f6d9ff] hover:text-secondary transition-colors" href="#about">About</a>
+  </div>
+  <a class="bg-secondary text-on-secondary px-6 py-2 rounded-sm text-sm font-semibold tracking-wider gold-glow" href="https://wa.me/27658063290" target="_blank">Book Now</a>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 cinematic-overlay z-10"></div>
+      <img alt="Serene luxury spa interior with warm ambient lighting" class="w-full h-full object-cover scale-105" src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1920&q=80&auto=format&fit=crop"/>
+    </div>
+    <div class="relative z-20 text-center max-w-4xl px-6">
+      <span class="block font-label text-secondary tracking-[0.3rem] uppercase text-xs mb-6 opacity-80">Edenvale's Premier Sanctuary</span>
+      <h1 class="font-headline text-6xl md:text-8xl italic text-on-surface mb-8 font-light leading-tight">The Art of <br/> Ethereal Beauty</h1>
+      <p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed">
+        A cinematic retreat where ancient rituals meet modern luxury. Experience the quiet authority of refined self-care.
+      </p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a class="w-full md:w-auto bg-secondary text-on-secondary px-10 py-4 rounded-sm font-bold tracking-widest text-sm gold-glow" href="https://wa.me/27658063290" target="_blank">
+          BOOK VIA WHATSAPP
+        </a>
+        <a class="w-full md:w-auto px-10 py-4 border border-secondary/30 text-secondary rounded-sm font-bold tracking-widest text-sm hover:bg-secondary/5 transition-all text-center" href="#rituals">
+          EXPLORE SERVICES
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-24 px-6 md:px-12 bg-primary-container grid md:grid-cols-2 gap-16 items-center overflow-hidden" id="about">
+    <div class="relative aspect-[4/5] overflow-hidden rounded-sm group">
+      <img alt="Botanical spa oils and massage detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80&auto=format&fit=crop"/>
+      <div class="absolute inset-0 bg-primary-container/20"></div>
+    </div>
+    <div class="space-y-8 pr-0 md:pr-12">
+      <h2 class="font-headline text-5xl md:text-6xl italic text-on-surface font-light">The Sacred <br/> Philosophy</h2>
+      <div class="w-24 h-px bg-secondary/40"></div>
+      <p class="font-body text-on-surface-variant text-lg leading-relaxed font-light">
+        At Mamthie's, we believe beauty is a ritual, not a routine. Nestled in the heart of Edenvale, our sanctuary is designed to strip away the noise of the outside world, leaving only stillness and restoration.
+      </p>
+      <p class="font-body text-on-surface-variant text-lg leading-relaxed font-light">
+        Every touch is intentional. Every aroma is curated. We combine premium botanical elements with precise technical expertise to reveal your most luminous self.
+      </p>
+      <div class="pt-8">
+        <a href="#rituals" class="text-secondary font-bold tracking-widest text-sm flex items-center gap-4 group">
+          OUR RITUALS
+          <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">trending_flat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (Ritual Menu) -->
+  <section class="py-32 bg-background px-6 md:px-12" id="rituals">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col mb-12">
+        <span class="text-secondary tracking-widest uppercase text-xs font-semibold block mb-4">Curated Experiences</span>
+        <h2 class="font-headline text-5xl italic text-on-surface font-light">The Ritual Menu</h2>
+      </div>
+
+      <!-- Tabbed Navigation -->
+      <div class="flex gap-8 md:gap-12 border-b border-outline-variant/20 mb-16 pb-4 overflow-x-auto tab-scroll">
+        <button class="tab-trigger active font-headline italic text-xl md:text-2xl text-on-surface-variant hover:text-secondary transition-all border-b-2 border-transparent pb-2 whitespace-nowrap" onclick="openTab(event, 'massages')">Massages</button>
+        <button class="tab-trigger font-headline italic text-xl md:text-2xl text-on-surface-variant hover:text-secondary transition-all border-b-2 border-transparent pb-2 whitespace-nowrap" onclick="openTab(event, 'facials')">Facials</button>
+        <button class="tab-trigger font-headline italic text-xl md:text-2xl text-on-surface-variant hover:text-secondary transition-all border-b-2 border-transparent pb-2 whitespace-nowrap" onclick="openTab(event, 'hands-feet')">Hands &amp; Feet</button>
+        <button class="tab-trigger font-headline italic text-xl md:text-2xl text-on-surface-variant hover:text-secondary transition-all border-b-2 border-transparent pb-2 whitespace-nowrap" onclick="openTab(event, 'waxing')">Waxing</button>
+        <button class="tab-trigger font-headline italic text-xl md:text-2xl text-on-surface-variant hover:text-secondary transition-all border-b-2 border-transparent pb-2 whitespace-nowrap" onclick="openTab(event, 'lashes')">Lashes</button>
+      </div>
+
+      <!-- Massages Tab -->
+      <div class="tab-content active" id="massages">
+        <div class="grid lg:grid-cols-2 gap-x-24 gap-y-6">
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Full Body Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(60 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R450</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Couples Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(60 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R800</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Full Body Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(75 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R500</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Full Body Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(90 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R650</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Couples Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(90 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R1150</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Prenatal Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(60 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R550</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Deep Tissue Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(60 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R550</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Hot Stone Full Body <span class="text-xs text-on-surface-variant opacity-60 ml-2">(60 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R550</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Back, Neck &amp; Shoulders <span class="text-xs text-on-surface-variant opacity-60 ml-2">(30 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R280</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Reflexology Foot Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(30 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R300</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Foot / Hand Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(30 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R250</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Indian Head Massage <span class="text-xs text-on-surface-variant opacity-60 ml-2">(30 mins)</span></h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R350</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facials Tab -->
+      <div class="tab-content" id="facials">
+        <div class="grid lg:grid-cols-2 gap-x-24 gap-y-6">
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Deep Cleanse Facial</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R550</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Men's Facial</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R450</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Teens Facial</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R400</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Professional Peel</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R650</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hands & Feet Tab -->
+      <div class="tab-content" id="hands-feet">
+        <div class="grid lg:grid-cols-2 gap-x-24 gap-y-6">
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Deluxe Pedicure Gelish</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R300</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Deluxe Manicure Gelish</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R250</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Gel X Tips</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R350</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Pedicure with Polish</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R220</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Manicure with Polish</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R200</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">File, Buff &amp; Paint</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R150</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Soak Off</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R100</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Medi Peel</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R380</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waxing Tab -->
+      <div class="tab-content" id="waxing">
+        <div class="grid lg:grid-cols-2 gap-x-24 gap-y-6">
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Hollywood Wax</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R350</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Bikini Wax</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R200</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Half Leg Wax</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R250</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Full Leg Wax</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R300</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Underarm Wax</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R200</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Full Arm Wax</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R250</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Brow Shape</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R150</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lashes Tab -->
+      <div class="tab-content" id="lashes">
+        <div class="grid lg:grid-cols-2 gap-x-24 gap-y-6">
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Classic Lash Extensions</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R400</span>
+          </div>
+          <div class="group flex justify-between items-end border-b border-outline-variant/10 pb-4 hover:border-secondary/40 transition-colors">
+            <h4 class="text-on-surface font-light text-lg">Full Volume Lash Extensions</h4>
+            <span class="text-[#d4af37] font-headline text-2xl font-bold">R450</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bespoke CTA -->
+      <div class="mt-24 bg-surface-container-lowest border border-outline-variant/10 p-12 rounded-sm flex flex-col justify-center items-center text-center space-y-6">
+        <h3 class="font-headline text-3xl italic text-on-surface">Bespoke Rituals</h3>
+        <p class="text-on-surface-variant/60 text-lg font-light max-w-xl">Contact our concierge for custom treatment packages and group bookings tailored to your sanctuary needs.</p>
+        <a class="text-secondary text-sm font-bold tracking-[0.2rem] uppercase border-b border-secondary/40 pb-1 hover:border-secondary transition-all" href="https://wa.me/27658063290">Enquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Request Section -->
+  <section class="py-32 bg-surface-container-low px-6" id="booking">
+    <div class="max-w-4xl mx-auto glass-panel p-12 md:p-20 rounded-sm shadow-2xl">
+      <div class="text-center mb-16">
+        <h2 class="font-headline text-5xl italic text-on-surface mb-4">Request Appointment</h2>
+        <p class="font-body text-on-surface-variant font-light">Leave your details and we will confirm your sanctuary time.</p>
+      </div>
+      <form id="bookingForm" class="grid md:grid-cols-2 gap-10">
+        <div class="space-y-1">
+          <label class="text-[10px] tracking-widest text-secondary font-bold uppercase" for="clientName">Full Name</label>
+          <input id="clientName" name="clientName" class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 text-on-surface placeholder:text-outline/40 focus:ring-0 focus:border-secondary transition-all outline-none" placeholder="Your name" type="text" required/>
+        </div>
+        <div class="space-y-1">
+          <label class="text-[10px] tracking-widest text-secondary font-bold uppercase" for="clientPhone">Phone Number</label>
+          <input id="clientPhone" name="clientPhone" class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 text-on-surface placeholder:text-outline/40 focus:ring-0 focus:border-secondary transition-all outline-none" placeholder="+27 ..." type="tel" required/>
+        </div>
+        <div class="space-y-1">
+          <label class="text-[10px] tracking-widest text-secondary font-bold uppercase" for="clientService">Preferred Service</label>
+          <select id="clientService" name="clientService" class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 text-on-surface focus:ring-0 focus:border-secondary transition-all outline-none appearance-none" required>
+            <option value="" class="bg-surface-container">Select a Ritual</option>
+            <option value="Massage Ritual" class="bg-surface-container">Massage Ritual</option>
+            <option value="Facial Sanctuary" class="bg-surface-container">Facial Sanctuary</option>
+            <option value="Hand &amp; Foot Care" class="bg-surface-container">Hand &amp; Foot Care</option>
+            <option value="Waxing &amp; Grooming" class="bg-surface-container">Waxing &amp; Grooming</option>
+            <option value="Ethereal Lashes" class="bg-surface-container">Ethereal Lashes</option>
+          </select>
+        </div>
+        <div class="space-y-1">
+          <label class="text-[10px] tracking-widest text-secondary font-bold uppercase" for="clientDate">Date Preference</label>
+          <input id="clientDate" name="clientDate" class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 text-on-surface focus:ring-0 focus:border-secondary transition-all outline-none" type="date" required/>
+        </div>
+        <div class="md:col-span-2 pt-12 flex justify-center">
+          <button class="bg-secondary text-on-secondary px-16 py-4 rounded-sm font-bold tracking-[0.2rem] text-sm gold-glow" type="submit">SEND REQUEST</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="py-24 bg-background px-6 md:px-12" id="location">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
+      <div class="w-full lg:w-1/2 space-y-12">
+        <div>
+          <span class="text-secondary tracking-widest uppercase text-xs font-semibold block mb-4">Visit Our Sanctuary</span>
+          <h2 class="font-headline text-5xl italic text-on-surface font-light">Edenvale Retreat</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="space-y-8">
+            <div class="flex items-start gap-6">
+              <span class="material-symbols-outlined text-secondary mt-1">pin_drop</span>
+              <div>
+                <h4 class="text-sm font-bold text-on-surface tracking-widest uppercase mb-1">Address</h4>
+                <p class="text-on-surface-variant font-light leading-relaxed">Number 3 Linksfield Rd,<br/>Edenvale, Johannesburg, 1609</p>
+                <a class="text-secondary text-xs font-bold tracking-widest uppercase mt-4 inline-block border-b border-secondary/40 hover:border-secondary transition-all" href="https://www.google.com/maps/search/?api=1&query=3+Linksfield+Rd,+Edenvale,+Johannesburg,+1609" target="_blank">Get Directions</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <span class="material-symbols-outlined text-secondary mt-1">call</span>
+              <div>
+                <h4 class="text-sm font-bold text-on-surface tracking-widest uppercase mb-1">Concierge</h4>
+                <p class="text-on-surface-variant font-light mb-2">+27 65 806 3290</p>
+                <a class="text-[#d4af37] hover:brightness-125 transition-all text-sm font-semibold" href="https://wa.me/27658063290">Book via WhatsApp</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <span class="material-symbols-outlined text-secondary mt-1">mail</span>
+              <div>
+                <h4 class="text-sm font-bold text-on-surface tracking-widest uppercase mb-1">Email</h4>
+                <a class="text-on-surface-variant font-light hover:text-secondary transition-colors" href="mailto:mamthie87@gmail.com">mamthie87@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-8">
+            <div class="flex items-start gap-6">
+              <span class="material-symbols-outlined text-secondary mt-1">schedule</span>
+              <div class="w-full">
+                <h4 class="text-sm font-bold text-on-surface tracking-widest uppercase mb-4">Ritual Hours</h4>
+                <div class="grid grid-cols-1 gap-y-3">
+                  <div class="flex justify-between text-sm text-on-surface-variant font-light border-b border-outline-variant/10 pb-2">
+                    <span>Mon - Fri</span>
+                    <span>09:00 - 18:00</span>
+                  </div>
+                  <div class="flex justify-between text-sm text-on-surface-variant font-light border-b border-outline-variant/10 pb-2">
+                    <span>Saturday</span>
+                    <span>08:00 - 16:00</span>
+                  </div>
+                  <div class="text-xs text-on-surface-variant/60 font-light italic mt-2">
+                    Sunday &amp; Public Holidays: Closed<br/>
+                    <span class="text-secondary opacity-100">(By Special Appointment Only)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <span class="material-symbols-outlined text-secondary mt-1">camera</span>
+              <div>
+                <h4 class="text-sm font-bold text-on-surface tracking-widest uppercase mb-1">Instagram</h4>
+                <a class="text-on-surface-variant font-light hover:text-secondary transition-colors" href="https://instagram.com/MamthiesBeautySpa" target="_blank">@MamthiesBeautySpa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 h-[600px] rounded-sm overflow-hidden relative shadow-2xl">
+        <iframe
+          src="https://maps.google.com/maps?q=3+Linksfield+Rd,+Edenvale,+Johannesburg,+1609&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mamthie's Beauty Spa Location - 3 Linksfield Rd, Edenvale">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#1a1a1a] w-full border-t border-white/5 relative">
+  <div class="max-w-7xl mx-auto px-12 pt-24 pb-12">
+    <div class="flex flex-col items-center text-center space-y-12">
+      <!-- Back to Top -->
+      <a class="group flex flex-col items-center gap-2" href="#top">
+        <span class="material-symbols-outlined text-secondary text-3xl group-hover:-translate-y-1 transition-transform">keyboard_double_arrow_up</span>
+        <span class="text-[10px] tracking-[0.3rem] text-secondary/40 group-hover:text-secondary transition-colors uppercase">Top</span>
+      </a>
+      <div class="space-y-4">
+        <div class="font-headline text-4xl italic text-[#f6d9ff] font-light">Mamthie's Beauty Spa</div>
+        <p class="font-body text-sm tracking-[0.2rem] uppercase font-light text-[#d4af37] opacity-80">Cinematic Sanctuary</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
+        <a class="font-body text-xs tracking-widest uppercase font-light text-[#f6d9ff]/40 hover:text-[#d4af37] transition-all" href="#rituals">The Rituals</a>
+        <a class="font-body text-xs tracking-widest uppercase font-light text-[#f6d9ff]/40 hover:text-[#d4af37] transition-all" href="#about">The Sanctuary</a>
+        <a class="font-body text-xs tracking-widest uppercase font-light text-[#f6d9ff]/40 hover:text-[#d4af37] transition-all" href="https://wa.me/27658063290">WhatsApp Concierge</a>
+        <a class="font-body text-xs tracking-widest uppercase font-light text-[#f6d9ff]/40 hover:text-[#d4af37] transition-all" href="mailto:mamthie87@gmail.com">Email Enquiry</a>
+      </div>
+      <div class="flex gap-10">
+        <a class="text-[#f6d9ff]/30 hover:text-[#d4af37] transition-colors" href="https://instagram.com/MamthiesBeautySpa" target="_blank" aria-label="Instagram">
+          <span class="material-symbols-outlined text-2xl">camera</span>
+        </a>
+        <a class="text-[#f6d9ff]/30 hover:text-[#d4af37] transition-colors" href="https://wa.me/27658063290" aria-label="WhatsApp">
+          <span class="material-symbols-outlined text-2xl">chat</span>
+        </a>
+        <a class="text-[#f6d9ff]/30 hover:text-[#d4af37] transition-colors" href="mailto:mamthie87@gmail.com" aria-label="Email">
+          <span class="material-symbols-outlined text-2xl">mail</span>
+        </a>
+      </div>
+      <div class="w-full pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="font-body text-[10px] tracking-[0.2rem] uppercase font-light text-[#f6d9ff]/20">&copy; 2025 Mamthie's Beauty Spa. All Rights Reserved.</p>
+        <div class="flex gap-8">
+          <a class="font-body text-[10px] tracking-[0.2rem] uppercase font-light text-[#f6d9ff]/20 hover:text-[#d4af37] transition-colors" href="#">Privacy Policy</a>
+          <a class="font-body text-[10px] tracking-[0.2rem] uppercase font-light text-[#f6d9ff]/20 hover:text-[#d4af37] transition-colors" href="#">Terms of Grace</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Tab switching
+function openTab(evt, tabName) {
+  var tabcontent = document.getElementsByClassName("tab-content");
+  for (var i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+  }
+  var tablinks = document.getElementsByClassName("tab-trigger");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
+
+// WhatsApp Booking Bridge
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  var name = document.getElementById('clientName').value.trim();
+  var phone = document.getElementById('clientPhone').value.trim();
+  var service = document.getElementById('clientService').value;
+  var date = document.getElementById('clientDate').value;
+
+  if (!name || !phone || !service || !date) {
+    alert('Please fill in all fields to complete your booking request.');
+    return;
+  }
+
+  // Format date for readability
+  var dateObj = new Date(date + 'T00:00:00');
+  var formattedDate = dateObj.toLocaleDateString('en-ZA', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  var message =
+    '*✨ New Sanctuary Booking Request ✨*\n\n' +
+    '*Name:* ' + name + '\n' +
+    '*Phone:* ' + phone + '\n' +
+    '*Ritual:* ' + service + '\n' +
+    '*Preferred Date:* ' + formattedDate;
+
+  var encoded = encodeURIComponent(message);
+  window.open('https://wa.me/27658063290?text=' + encoded, '_blank');
+});
+</script>
+</body>
+</html>
